@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening and Closing hours</title>
+</head>
+<body>
+    <% for(let day of days){ %>
+    <% const hoursObj = operatingHours[day]|| operatingHours['defaultHours']%>
+    <section style="display: inline-flex; flex-direction:column; padding:5px;">
+        <h2><%= day.toUpperCase() %></h2>
+        <div>
+            <% if(hoursObj.open){%>
+            <p>Open:<%= hoursObj.open%></p>
+            <p>Closed:<%= hoursObj.close%></p>
+            <% } else { %>
+            <p>Closed</p>
+            <% } %>
+        </div>
+    </section>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <ol>
+        <% for(let item of menuItem){ %>
+            <li><strong><%= item.name %></strong>
+                <span>$ <%= item.cost %></span>
+                <span><%= item.description %></span>
+        </li>
+        <% } %>
+    </ol>
+</body>
+</html>
