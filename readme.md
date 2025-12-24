@@ -3,6 +3,9 @@
 A collection of learning projects for Node.JS based on the book Node.Js projects by Jonathan Wexler.
 
 TODO: Add CSS to Project 3: Node_Web_Server
+TODO: Add further modification to Project 5: RSS Aggr Feed
+TODO: Add count modification to Project 6: Library API
+
 
 ## To run the projects
 
